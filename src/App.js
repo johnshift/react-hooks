@@ -8,6 +8,7 @@ import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
 import UseLayoutEffect from "./pages/UseLayoutEffect";
 import UseImperativeHandle from "./pages/UseImperativeHandle";
+import UseContext from "./pages/UseContext";
 
 function App() {
   return (
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route path="/use-imperative-handle">
             <UseImperativeHandle />
+          </Route>
+          <Route path="/use-context">
+            <UseContext />
           </Route>
         </Switch>
       </div>
