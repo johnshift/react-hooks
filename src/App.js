@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import UseState from "./pages/UseState";
 import UseReducer from "./pages/UseReducer";
 import UseEffect from "./pages/UseEffect";
+import UseRef from "./pages/UseRef";
 
 function App() {
   return (
@@ -17,10 +18,16 @@ function App() {
                 <Link to="use-state">useState</Link>
               </li>
               <li>
+                <Link to="use-reducer">useReducer</Link>
+              </li>
+              <li>
                 <Link to="use-effect">useEffect</Link>
               </li>
               <li>
-                <Link to="use-reducer">useReducer</Link>
+                <Link to="use-ref">useRef</Link>
+              </li>
+              <li>
+                <Link to="use-layout-effect">useLayoutEffect</Link>
               </li>
               <li>
                 <Link to="use-context">useContext</Link>
@@ -32,13 +39,7 @@ function App() {
                 <Link to="use-memo">useMemo</Link>
               </li>
               <li>
-                <Link to="use-ref">useRef</Link>
-              </li>
-              <li>
                 <Link to="use-imperative-handle">useImperativeHandle</Link>
-              </li>
-              <li>
-                <Link to="use-layout-effect">useLayoutEffect</Link>
               </li>
 
               <li>
@@ -49,12 +50,14 @@ function App() {
           <Route path="/use-state">
             <UseState />
           </Route>
+          <Route path="/use-reducer">
+            <UseReducer />
+          </Route>
           <Route path="/use-effect">
             <UseEffect />
           </Route>
-
-          <Route path="/use-reducer">
-            <UseReducer />
+          <Route path="/use-ref">
+            <UseRef />
           </Route>
         </Switch>
       </div>
