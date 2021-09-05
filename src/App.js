@@ -6,6 +6,8 @@ import UseState from "./pages/UseState";
 import UseReducer from "./pages/UseReducer";
 import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
+import UseLayoutEffect from "./pages/UseLayoutEffect";
+import UseImperativeHandle from "./pages/UseImperativeHandle";
 
 function App() {
   return (
@@ -30,6 +32,9 @@ function App() {
                 <Link to="use-layout-effect">useLayoutEffect</Link>
               </li>
               <li>
+                <Link to="use-imperative-handle">useImperativeHandle</Link>
+              </li>
+              <li>
                 <Link to="use-context">useContext</Link>
               </li>
               <li>
@@ -37,9 +42,6 @@ function App() {
               </li>
               <li>
                 <Link to="use-memo">useMemo</Link>
-              </li>
-              <li>
-                <Link to="use-imperative-handle">useImperativeHandle</Link>
               </li>
 
               <li>
@@ -58,6 +60,12 @@ function App() {
           </Route>
           <Route path="/use-ref">
             <UseRef />
+          </Route>
+          <Route path="/use-layout-effect">
+            <UseLayoutEffect />
+          </Route>
+          <Route path="/use-imperative-handle">
+            <UseImperativeHandle />
           </Route>
         </Switch>
       </div>
